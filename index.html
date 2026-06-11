@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>COMMISSION REFERENCE</title>
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Pretendard', sans-serif;
+    background: #F5F5F5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+  }
+
+  .header {
+    text-align: center;
+  }
+
+  .eyebrow {
+    font-size: 14px;
+    font-weight: 500;
+    color: #aaa;
+    margin-bottom: 10px;
+    letter-spacing: 0.2em;
+  }
+
+  .title {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: #1a1a1a;
+    text-transform: uppercase;
+  }
+
+  .divider {
+    width: 32px;
+    height: 1.5px;
+    background: #d0cdc9;
+    margin: 18px auto 0;
+  }
+
+  .cards {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    background: #fff;
+    border: 1px solid #e8e6e2;
+    border-radius: 12px;
+    padding: 28px 20px 24px;
+    width: 168px;
+    transition: box-shadow 0.18s, transform 0.18s, border-color 0.18s;
+    cursor: pointer;
+  }
+
+  .card:hover {
+    box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+    transform: translateY(-3px);
+    border-color: #c9c6c0;
+  }
+
+  .card-name {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1a1a1a;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+  .card-desc {
+    font-size: 12px;
+    font-weight: 400;
+    color: #999;
+    line-height: 1.7;
+    text-align: center;
+    letter-spacing: 0.01em;
+    word-break: keep-all;
+  }
+
+  .card-desc span {
+    display: block;
+  }
+
+  .card-divider {
+    width: 20px;
+    height: 1px;
+    background: #e8e6e2;
+  }
+
+  .footer {
+    font-size: 14px;
+    color: #aaa;
+    text-align: center;
+    line-height: 1.9;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="header">
+    <p class="eyebrow">커미션 신청용 자료를 만들어봅시다</p>
+    <h1 class="title">Commission Reference</h1>
+    <div class="divider"></div>
+  </div>
+
+  <div class="cards">
+
+    <!-- Center -->
+    <a class="card" href="center.html">
+      <span class="card-name">Center</span>
+      <div class="card-divider"></div>
+      <p class="card-desc">일러스트나 합동 전신을 정중앙에 배치하면 좋아요</p>
+    </a>
+
+    <!-- Side -->
+    <a class="card" href="side.html">
+      <span class="card-name">Side</span>
+      <div class="card-divider"></div>
+      <p class="card-desc">캐릭터 전신이나 의상 자료를 양 사이드에 배치하면 좋아요</p>
+    </a>
+
+    <!-- Mini -->
+    <a class="card" href="mini.html">
+      <span class="card-name">Mini</span>
+      <div class="card-divider"></div>
+      <p class="card-desc">간단한 정보만 담아요<br>정보가 많이 필요없는 커미션에 유용</p>
+    </a>
+
+  </div>
+
+  <p class="footer">
+    CENTER와 SIDE는 2인 페어 캐릭터 자료용에 특화되어 있습니다.<br>
+    자유롭게 편집하고 쓰셔도 괜찮습니다.
+  </p>
+
+</div>
+
+</body>
+</html>
